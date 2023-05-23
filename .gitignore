@@ -1,6 +1,10 @@
 # Env
 .env
 
+# ./uploads
+uploads/*
+!uploads/keep
+
 # compiled output
 /dist
 /node_modules
@@ -31,6 +35,7 @@ lerna-debug.log*
 *.sublime-workspace
 
 # IDE - VSCode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
