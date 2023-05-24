@@ -1,9 +1,9 @@
 {
-  "name": "cloud-storage",
-  "version": "0.0.1",
+  "name": "cloud-storage-api",
+  "version": "1.0.0",
   "description": "",
   "author": "zhenya-paitash",
-  "private": true,
+  "private": false,
   "license": "UNLICENSED",
   "keywords": [
     "typescript",
@@ -15,6 +15,9 @@
     "passport",
     "jwt"
   ],
+  "engines": {
+    "node": ">=18.16.0"
+  },
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
