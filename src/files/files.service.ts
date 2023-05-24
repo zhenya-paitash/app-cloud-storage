@@ -91,7 +91,7 @@ export class FilesService {
    */
   remove(userId: number, ids: string) {
     const qb = this.repository.createQueryBuilder('file');
-    qb.where('id IN (:...ids) AND userID = :userId', {
+    qb.where('id IN (:...ids) AND userId = :userId', {
       ids: ids.split(','),
       userId,
     });

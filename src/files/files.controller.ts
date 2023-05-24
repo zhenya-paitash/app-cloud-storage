@@ -72,6 +72,9 @@ export class FilesController {
   @Post()
   @UseInterceptors(
     FileInterceptor('file', {
+      limits: {
+        fileSize: 1024 * 1024 * 5,
+      },
       storage: fileStorage,
     }),
   )
